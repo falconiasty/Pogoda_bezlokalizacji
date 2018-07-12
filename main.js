@@ -1,4 +1,4 @@
-    document.getElementById('clicker').addEventListener("click",getCity)
+﻿    document.getElementById('clicker').addEventListener("click",getCity)
 
 
     //funkcja calculate
@@ -10,7 +10,7 @@
 
 
 
-    var  coords = 'http://api.openweathermap.org/data/2.5/weather?q='+city_2+'\&APPID=5fdf06236055565849ed4d0e8f85bd58';
+    var  coords = 'https://api.openweathermap.org/data/2.5/weather?q='+city_2+'\&APPID=5fdf06236055565849ed4d0e8f85bd58';
     console.log(coords);
 
     fetch(coords)
@@ -34,7 +34,7 @@
             var  tempe = document.getElementById("tempe");
             tempe.textContent = Math.round(temp*100)/100+"℃";
 
-            document.getElementById("icon_sun").src = "http://openweathermap.org/img/w/"+weather_descriptionIcon+".png";
+            document.getElementById("icon_sun").src = "https://openweathermap.org/img/w/"+weather_descriptionIcon+".png";
 
              document.getElementById("pressure").textContent = pressure;
              document.getElementById("humidity").textContent = humidity;
